@@ -1,0 +1,1022 @@
+[
+  {
+    "id": "c95b21c1-a28d-46f5-87f3-e04ac3246b71",
+    "booking_id": "61ba7255-a87c-4cb1-af3a-3a3a1536a397",
+    "amount": 39.9,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "A. Okafor",
+      "number": "424242421037",
+      "exp_month": 2,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "33ca71c4-61ca-42ba-b8ac-76b433cba13d",
+    "booking_id": "fe2e0cb5-bf3e-487e-9926-33c4ddbaa096",
+    "amount": 62.5,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242421074",
+      "exp_month": 3,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "658d9cca-e241-45cb-b52a-9c310ad647c0",
+    "booking_id": "8f4a8436-5042-478d-900c-a860febe4a95",
+    "amount": 4.9,
+    "currency": "chf",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "C. Dubois",
+      "number": "10074070",
+      "sort_code": "104662",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "ea98f1c2-495b-4da9-b080-e0f1123d2bce",
+    "booking_id": "e89e8884-f70e-46a3-a3d5-3fe7e7b38032",
+    "amount": 29.9,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "J. Doe",
+      "number": "424242421259",
+      "exp_month": 8,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "8d923e19-97ad-46f9-8ee1-b227db4cb860",
+    "booking_id": "00c34dd2-a06b-4a79-96f1-346a80a58f78",
+    "amount": 23.9,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "E. Andersson",
+      "number": "424242421407",
+      "exp_month": 12,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "64f5922b-b057-4fed-89dc-ced4ac661ca0",
+    "booking_id": "0cd68abb-258c-4f80-b893-0934e5d1ca51",
+    "amount": 89,
+    "currency": "eur",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "N. Müller",
+      "number": "10148140",
+      "sort_code": "109324",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "189c986c-cb6c-457e-b0aa-3b254f111ace",
+    "booking_id": "49bb65b0-0c63-4743-b7fe-837653617a36",
+    "amount": 46,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242421592",
+      "exp_month": 5,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "c0aba702-fe66-499c-989e-825eb54d2ed2",
+    "booking_id": "aca7f2b6-2474-4229-ab1d-22d80004a844",
+    "amount": 62,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "M. Silva",
+      "number": "424242421629",
+      "exp_month": 6,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "c0546237-2f12-4c9a-8b13-f517862b9221",
+    "booking_id": "68335efc-ca57-4678-950b-c722c83b673c",
+    "amount": 82.5,
+    "currency": "gbp",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "J. Doe",
+      "number": "10259245",
+      "sort_code": "116317",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "73662e9c-f35e-405d-9093-634318d0f2e6",
+    "booking_id": "d2995439-bd05-4c51-9b3a-e2eb9f386ef5",
+    "amount": 76.9,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "A. Okafor",
+      "number": "424242421814",
+      "exp_month": 11,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "79342188-05a8-478a-b1a2-fe44f6d82976",
+    "booking_id": "ff535aaf-0970-4244-964a-812c799bae35",
+    "amount": 42.5,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "N. Müller",
+      "number": "424242421962",
+      "exp_month": 3,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "c9eb621a-cafd-455e-bcf2-96e0a31b4dc2",
+    "booking_id": "64624fcc-82bf-4457-b2c4-e14dc1dc4415",
+    "amount": 18.4,
+    "currency": "sek",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "C. Dubois",
+      "number": "10333315",
+      "sort_code": "120979",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "d3d40e04-9413-45af-808e-55edc2214cb7",
+    "booking_id": "dfdadf9d-21dc-492d-b1c7-5b5c2ceffd5c",
+    "amount": 55,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "M. Silva",
+      "number": "424242422147",
+      "exp_month": 8,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "1b7c2d92-3c16-4f58-b0ff-f813fa012fa0",
+    "booking_id": "c5cfa3a4-9aea-4e9c-9a83-6c9a2e655fad",
+    "amount": 42.5,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "E. Andersson",
+      "number": "424242422184",
+      "exp_month": 9,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "ad43a222-e105-41d2-a69d-b89f2b170188",
+    "booking_id": "83b9db0e-51e4-4914-9592-d3a447c6c43d",
+    "amount": 29.9,
+    "currency": "eur",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "A. Okafor",
+      "number": "10444420",
+      "sort_code": "127972",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "d60685b6-0159-4be5-a650-d1321e556372",
+    "booking_id": "53b869ea-5028-47ba-ab5f-80d67f0b7565",
+    "amount": 49,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242422369",
+      "exp_month": 2,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "e9793e9f-51c3-43f2-a825-2805df14dc2f",
+    "booking_id": "c7567a50-4882-42d2-baeb-ead639f88da5",
+    "amount": 46,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "C. Dubois",
+      "number": "424242422517",
+      "exp_month": 6,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "ad254a2d-409f-4b54-9784-18e2480bfa98",
+    "booking_id": "7962677a-24a4-4bab-8250-51e036082075",
+    "amount": 59,
+    "currency": "chf",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "J. Doe",
+      "number": "10518490",
+      "sort_code": "132634",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "b7826854-1246-4808-8ae6-b0607fab8f1e",
+    "booking_id": "3bab5004-ec08-4a93-9556-712e3466b996",
+    "amount": 46,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "E. Andersson",
+      "number": "424242422702",
+      "exp_month": 11,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "bff6231a-31a5-4773-8029-e7949d88c9d1",
+    "booking_id": "67798fec-5fec-4e9d-9090-64febe394a1e",
+    "amount": 26.9,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "N. Müller",
+      "number": "424242422739",
+      "exp_month": 12,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "69cad0a1-0d02-4e43-87e4-588f2cfbc50b",
+    "booking_id": "adf5f688-9332-499b-9cce-13fca3b067b2",
+    "amount": 102.5,
+    "currency": "sek",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "S. Rossi",
+      "number": "10629595",
+      "sort_code": "139627",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "39f4de12-8eaa-4ec8-9868-a33a74890a2b",
+    "booking_id": "da835975-fab8-4176-94ec-d421e346c37b",
+    "amount": 72,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "M. Silva",
+      "number": "424242422924",
+      "exp_month": 5,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "95031ca8-1272-4d37-8aaf-a774c795377e",
+    "booking_id": "73709440-ebba-448b-a711-193627b398f3",
+    "amount": 48.4,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "J. Doe",
+      "number": "424242423072",
+      "exp_month": 9,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "c9bb8e6f-d9b8-4c3b-9d1f-04b4ecee5369",
+    "booking_id": "d14c24fc-86be-4d43-9354-c2eeb4ddfff9",
+    "amount": 28.4,
+    "currency": "gbp",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "A. Okafor",
+      "number": "10703665",
+      "sort_code": "144289",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "aaeeea24-bfcf-4331-8a6a-6cf1fa8c4370",
+    "booking_id": "fffe5f02-56e3-4fdd-8ef7-5b478d70f574",
+    "amount": 35,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "N. Müller",
+      "number": "424242423257",
+      "exp_month": 2,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "bc70db5e-e413-4286-8c68-f55b9c621dca",
+    "booking_id": "7147c2f4-38cb-4e92-91dd-49fe19f5830f",
+    "amount": 68.5,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "C. Dubois",
+      "number": "424242423294",
+      "exp_month": 3,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "ce81b605-c6e7-4549-a4e1-0a6a1af2bbaf",
+    "booking_id": "c559def7-79ba-463e-b652-16a3e5048cf7",
+    "amount": 44.9,
+    "currency": "chf",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "M. Silva",
+      "number": "10814770",
+      "sort_code": "151282",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "c91f0ad5-d32a-46b6-a479-b5adaff1fe96",
+    "booking_id": "660cac33-64ff-4907-b599-1adc83de69d2",
+    "amount": 34.9,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "E. Andersson",
+      "number": "424242423479",
+      "exp_month": 8,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "a75713a4-d7d3-46b3-92d7-0d2892d7cb8b",
+    "booking_id": "6276d87e-8080-4b92-a8c6-272f3f696202",
+    "amount": 31.9,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "A. Okafor",
+      "number": "424242423627",
+      "exp_month": 12,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "9469f77d-216c-4c5b-83c4-0052ddb7c075",
+    "booking_id": "61d04ba8-5d0b-45cb-bd56-6d410e63d455",
+    "amount": 65,
+    "currency": "eur",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "S. Rossi",
+      "number": "10888840",
+      "sort_code": "155944",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "b7b2fca5-ab6e-4b7f-96cf-9b051482bdfb",
+    "booking_id": "b6528802-d288-4371-a74d-9c312283446a",
+    "amount": 19.9,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "C. Dubois",
+      "number": "424242423812",
+      "exp_month": 5,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "bb73f247-e4fc-4772-a5e0-01fde7e04183",
+    "booking_id": "909adcd0-643d-43ac-95b7-509cd61c56dc",
+    "amount": 86,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "J. Doe",
+      "number": "424242423849",
+      "exp_month": 6,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "508436f2-cd36-4a55-b9ef-77711f3d7185",
+    "booking_id": "d8cc9c2c-b509-4312-9599-841ab151afac",
+    "amount": 27.5,
+    "currency": "gbp",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "E. Andersson",
+      "number": "10999945",
+      "sort_code": "162937",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "f0289d50-1d32-4326-94c4-8a44f7bd1113",
+    "booking_id": "1689df3a-40de-4bd9-94c5-d04cccab299b",
+    "amount": 46,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "N. Müller",
+      "number": "424242424034",
+      "exp_month": 11,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "341c4d9a-b1d2-4e3a-805b-8dc73ac2ae3b",
+    "booking_id": "71e527e9-f679-4267-a7ae-5f902dfb4e73",
+    "amount": 73.4,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242424182",
+      "exp_month": 3,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "1e0ee552-6e2f-4718-8043-7aea09d30a5d",
+    "booking_id": "8a1aea09-a678-4724-a60c-4b0fa9700b44",
+    "amount": 62.5,
+    "currency": "sek",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "M. Silva",
+      "number": "11074015",
+      "sort_code": "167599",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "218e803f-f653-42a5-bb0e-77c7327609da",
+    "booking_id": "2f9a73cd-5f9c-442e-aa84-e873d1765f42",
+    "amount": 45,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "J. Doe",
+      "number": "424242424367",
+      "exp_month": 8,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "b5d9eaa9-5565-46b1-b151-569912b397da",
+    "booking_id": "8360ab8f-b6b8-4251-8112-791675cd88e3",
+    "amount": 58.5,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "A. Okafor",
+      "number": "424242424404",
+      "exp_month": 9,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "d773a0c9-f3e0-42a3-bfbb-e1e977e04967",
+    "booking_id": "96023960-a643-43ad-b6a7-ba9ae84b2285",
+    "amount": 39,
+    "currency": "eur",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "N. Müller",
+      "number": "11185120",
+      "sort_code": "174592",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "53c20492-05c9-461d-9f23-284ddef6d765",
+    "booking_id": "58963189-e6b8-4ead-9d18-16cb93372375",
+    "amount": 45,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "C. Dubois",
+      "number": "424242424589",
+      "exp_month": 2,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "0460413c-f89a-4005-af7a-cd456534b00f",
+    "booking_id": "d12d8a4f-0646-48ae-b228-2d1af77c87c7",
+    "amount": 56.9,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "M. Silva",
+      "number": "424242424737",
+      "exp_month": 6,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "dc653116-c35d-4edc-876c-5ad868de387c",
+    "booking_id": "9f2c216f-1a04-4232-b61d-fa5f0a9c90be",
+    "amount": 29,
+    "currency": "chf",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "E. Andersson",
+      "number": "11259190",
+      "sort_code": "179254",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "210d1593-8963-4aaf-8533-9189d596a8a0",
+    "booking_id": "6ec69b58-92c7-41dd-b9f3-9ee3fc46bff4",
+    "amount": 76,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "A. Okafor",
+      "number": "424242424922",
+      "exp_month": 11,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "2e98c784-ca3d-4e91-8f6e-227c19f405ef",
+    "booking_id": "1e54e3dc-2a46-4126-a6c2-a8c98dbbd134",
+    "amount": 62,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242424959",
+      "exp_month": 12,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "d6897c0c-ac5a-49f1-bdef-af4a763f3831",
+    "booking_id": "981f6af1-f79a-4e3a-ae0c-0065c4b0f228",
+    "amount": 23.4,
+    "currency": "sek",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "C. Dubois",
+      "number": "11370295",
+      "sort_code": "186247",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "95f924f0-630a-49b9-a26b-78a911e313a3",
+    "booking_id": "d7dace03-e001-4adf-b317-f66990c551d8",
+    "amount": 96,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "J. Doe",
+      "number": "424242425144",
+      "exp_month": 5,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "71fd0d87-55d3-414c-adf2-5831239bd64b",
+    "booking_id": "d7f27908-4e73-48a3-b4d8-338ff4306c96",
+    "amount": 72.5,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "E. Andersson",
+      "number": "424242425292",
+      "exp_month": 9,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "e0f69e25-13a7-481d-95b5-9bd60fe94f90",
+    "booking_id": "4c29d104-89bc-4272-8eaf-eb433b430672",
+    "amount": 52.5,
+    "currency": "gbp",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "N. Müller",
+      "number": "11444365",
+      "sort_code": "190909",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "885dd05d-9065-4ba2-be16-1f1ccd769ff9",
+    "booking_id": "e15740ef-2bdb-4b75-bc20-1d68cf0f082d",
+    "amount": 24.9,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242425477",
+      "exp_month": 2,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "03897133-cf29-417f-b33c-53b93a8842fc",
+    "booking_id": "952cacfd-66f3-4ed2-8421-0c3b6e433e75",
+    "amount": 28.4,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "M. Silva",
+      "number": "424242425514",
+      "exp_month": 3,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "2ce85ae6-d973-4859-ab26-5e9afc67cb7b",
+    "booking_id": "01bc692b-2ebd-4edf-bbe0-33f6eb7563e8",
+    "amount": 25,
+    "currency": "chf",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "J. Doe",
+      "number": "11555470",
+      "sort_code": "197902",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "f9338ed8-ee4f-4fad-a182-0760aea8aceb",
+    "booking_id": "9e1b082e-3aa5-4da8-9834-547dd2a710b1",
+    "amount": 45,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "A. Okafor",
+      "number": "424242425699",
+      "exp_month": 8,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "6a3c7574-45d0-4019-83ed-ecde6976d2fe",
+    "booking_id": "a6cf23bd-f991-4120-9dfb-687d59ce9e66",
+    "amount": 76,
+    "currency": "sek",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "N. Müller",
+      "number": "424242425847",
+      "exp_month": 12,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "85bd1a76-2ecc-4055-af24-2ef7cf79d079",
+    "booking_id": "5c72a41a-b26a-4163-83b6-d152c34690c3",
+    "amount": 34,
+    "currency": "eur",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "C. Dubois",
+      "number": "11629540",
+      "sort_code": "202564",
+      "account_type": "individual",
+      "bank_name": "Starling Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "be91acb4-3430-489b-a022-7dee563c44f5",
+    "booking_id": "c86eee91-6030-41f6-a082-4b85fb6b2984",
+    "amount": 96,
+    "currency": "eur",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "M. Silva",
+      "number": "424242426032",
+      "exp_month": 5,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "b92cf728-1252-4358-a746-900e9fe1d022",
+    "booking_id": "588c725b-7df3-48c2-a73e-f1373ae99255",
+    "amount": 66,
+    "currency": "gbp",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "E. Andersson",
+      "number": "424242426069",
+      "exp_month": 6,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "ddb24997-acb3-48fe-866a-ab8731a5a0d8",
+    "booking_id": "63152921-e087-401e-b642-6926967db859",
+    "amount": 62.5,
+    "currency": "gbp",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "A. Okafor",
+      "number": "11740645",
+      "sort_code": "209557",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "6b2de519-48c6-437c-b559-f20a91386a37",
+    "booking_id": "1fcdbe75-0144-47f8-aab3-72d4a4e4b4d9",
+    "amount": 36.9,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "S. Rossi",
+      "number": "424242426254",
+      "exp_month": 11,
+      "exp_year": 2028,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "b6e5a5b9-fbaa-456c-8ce6-263a5c3355ac",
+    "booking_id": "25a7160c-6adf-4b75-a6d4-978d991282da",
+    "amount": 42.5,
+    "currency": "chf",
+    "source_type": "card",
+    "source": {
+      "object": "card",
+      "name": "C. Dubois",
+      "number": "424242426402",
+      "exp_month": 3,
+      "exp_year": 2029,
+      "address_country": "gb",
+      "address_post_code": "N1 9XX"
+    },
+    "status": "succeeded"
+  },
+  {
+    "id": "65551148-1876-487f-8139-4c3ef0657b95",
+    "booking_id": "50442393-3f58-4545-808f-023c1a88bd18",
+    "amount": 68.5,
+    "currency": "sek",
+    "source_type": "bank_account",
+    "source": {
+      "object": "bank_account",
+      "name": "J. Doe",
+      "number": "11814715",
+      "sort_code": "214219",
+      "account_type": "company",
+      "bank_name": "Deutsche Bank",
+      "country": "gb"
+    },
+    "status": "succeeded"
+  }
+]

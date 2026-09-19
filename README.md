@@ -132,7 +132,7 @@ List endpoints accept `?page` (default `1`) and `?limit` (default `10`, max `100
 
 ## Persistence
 
-PostgreSQL is always used — there is no in-memory mode. Seed data ships as JSON fixtures in `src/data/` (20 stations, 40 trips, 12 bookings) and is loaded via `npm run seed`, which is safe to run repeatedly (`ON CONFLICT DO NOTHING`). Use `npm run seed:clear` to truncate all tables and reseed from scratch.
+PostgreSQL is always used — there is no in-memory mode. Seed data ships as JSON fixtures in `src/data/` (61 stations, 792 trips across 6 dates, 150 bookings, and 60 matching payments for the confirmed bookings) and is loaded via `npm run seed`, which is safe to run repeatedly (`ON CONFLICT DO NOTHING`). Use `npm run seed:clear` to truncate all tables and reseed from scratch.
 
 ## Running in Codespaces
 

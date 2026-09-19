@@ -1,96 +1,1200 @@
 [
   {
-    "id": "7ef6e29b-0043-43d0-9f66-4c74c49a34ad",
-    "trip_id": "28feb093-9ef0-4ce3-bf48-e78aa44cb93d",
-    "passenger_name": "John Doe",
+    "id": "35310332-9153-4d95-9f12-00be30e73e6b",
+    "trip_id": "df2bd13c-636b-4e4c-b715-5823e9177ade",
+    "passenger_name": "John Okafor",
     "has_bicycle": true,
     "has_dog": true,
-    "status": "confirmed"
+    "status": "cancelled"
   },
   {
-    "id": "e4e20e81-b7bb-487a-8526-8538baaa1767",
-    "trip_id": "b20ed06f-7dfe-44e6-8970-728f09ac3abf",
-    "passenger_name": "Jane Smith",
-    "has_bicycle": false,
-    "has_dog": false,
-    "status": "pending"
-  },
-  {
-    "id": "72105ffb-6f9a-4905-939e-567fc97c72d9",
-    "trip_id": "8e32c1ac-c31d-400c-952a-c2632227ef9b",
-    "passenger_name": "Francis Bourgeois",
-    "has_bicycle": false,
-    "has_dog": false,
-    "status": "pending"
-  },
-  {
-    "id": "586deb4e-760d-45d6-b935-9267ce2efed8",
-    "trip_id": "1e09cbd4-97c5-4590-9e51-344c378ed3bf",
-    "passenger_name": "Amara Okafor",
+    "id": "61ba7255-a87c-4cb1-af3a-3a3a1536a397",
+    "trip_id": "739a62db-e97c-41e4-ba9b-3f12bb13d694",
+    "passenger_name": "Jane Müller",
     "has_bicycle": false,
     "has_dog": false,
     "status": "confirmed"
   },
   {
-    "id": "b65253da-75ce-44cd-84d0-f847d7300b21",
-    "trip_id": "a20ab711-f03e-43e0-b0c1-dd7bb64dea6c",
-    "passenger_name": "Lukas Novak",
-    "has_bicycle": true,
-    "has_dog": false,
-    "status": "pending"
-  },
-  {
-    "id": "567c3fc1-dc4b-4cd5-8a88-372394963619",
-    "trip_id": "ee1ba92a-f90d-450e-90d7-a6fb801d4bf4",
-    "passenger_name": "Sofia Rossi",
-    "has_bicycle": false,
-    "has_dog": true,
-    "status": "pending"
-  },
-  {
-    "id": "5eaa3de8-2e50-410f-9b2c-09ea4333ca72",
-    "trip_id": "be9ec665-2e44-458c-982f-ae07b8f2cdf4",
-    "passenger_name": "Mateus Silva",
+    "id": "fe2e0cb5-bf3e-487e-9926-33c4ddbaa096",
+    "trip_id": "066d7145-5aaa-47f6-b430-5bd3e6fc4fae",
+    "passenger_name": "Francis Garcia",
     "has_bicycle": false,
     "has_dog": false,
     "status": "confirmed"
   },
   {
-    "id": "c59489bd-0b81-478f-8330-3a70adc2d6c1",
-    "trip_id": "d3ea76d6-7272-42ca-b187-7ead3141e3a6",
-    "passenger_name": "Elin Andersson",
+    "id": "3d8bfad5-9cbc-4ac3-ac68-044fdadc67f7",
+    "trip_id": "5fe8aa4a-4c68-4323-96c7-b31e8499d757",
+    "passenger_name": "Amara Costa",
     "has_bicycle": false,
     "has_dog": false,
     "status": "pending"
   },
   {
-    "id": "c5291fa5-20e5-4da5-aa2d-0ea480437284",
-    "trip_id": "4f5b2a81-70be-4bc2-a8de-835603395df6",
-    "passenger_name": "Youssef El-Amin",
+    "id": "11dd4e65-e5af-45e3-b6f7-6d41ad8126d9",
+    "trip_id": "29d60121-ca1e-4437-9b0a-f1617a584bff",
+    "passenger_name": "Lukas Smith",
     "has_bicycle": true,
     "has_dog": false,
     "status": "pending"
   },
   {
-    "id": "f46c82ec-36de-4e46-884a-ad66494e9e22",
-    "trip_id": "f9caa64e-ef73-4527-acdb-a2511515a5fe",
-    "passenger_name": "Chiara Bianchi",
+    "id": "b50bf06d-bf47-451c-8aaa-295fe1876eed",
+    "trip_id": "da7621f1-a787-4b14-88a6-2d627eeb1b15",
+    "passenger_name": "Sofia El-Amin",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "8f4a8436-5042-478d-900c-a860febe4a95",
+    "trip_id": "5e718825-febd-4e1b-8874-bce118a2232b",
+    "passenger_name": "Mateus de Vries",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "e89e8884-f70e-46a3-a3d5-3fe7e7b38032",
+    "trip_id": "e7ba87b6-67ab-45c2-ab62-f968a8da84c1",
+    "passenger_name": "Elin Lindqvist",
     "has_bicycle": false,
     "has_dog": false,
     "status": "confirmed"
   },
   {
-    "id": "1d116e68-9479-4229-aa42-4a306d90f24e",
-    "trip_id": "30f2e189-9671-4518-a0e9-1603ef1d1fc3",
-    "passenger_name": "Noah Müller",
+    "id": "87458530-e311-4422-8ff5-954ac191b950",
+    "trip_id": "30976d6a-eb67-40bc-852f-135a087bdac4",
+    "passenger_name": "Youssef Eriksson",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "b727410f-05d9-46e6-b307-f0ed07c24fb0",
+    "trip_id": "4c1cb408-c0d0-4677-b7d2-90c22b5bbf18",
+    "passenger_name": "Chiara Silva",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "6a2e4ca1-5916-4bd2-a61c-f4c87666220f",
+    "trip_id": "4eddc53c-4711-4dbe-a4b4-78d93295c36c",
+    "passenger_name": "Noah Popescu",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "00c34dd2-a06b-4a79-96f1-346a80a58f78",
+    "trip_id": "34e53ae4-1f96-404b-be02-ed1bccc26392",
+    "passenger_name": "Camille Nowak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "0cd68abb-258c-4f80-b893-0934e5d1ca51",
+    "trip_id": "54ee4d33-7e53-43e9-8ac7-b557a95add36",
+    "passenger_name": "Hana Haddad",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "85b384f7-7848-46d2-b55b-950f47388b43",
+    "trip_id": "2d5cd863-8b4b-4cf4-90e6-a6f6c97659e8",
+    "passenger_name": "Dimitri Novak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "3c549c04-0e25-4171-85fa-d59ac5b2e34e",
+    "trip_id": "e9328b58-2870-4912-9b0a-5ac0f455978b",
+    "passenger_name": "Aoife Dubois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "5f7fe97a-d0cc-4d14-8830-ba6ad7a01908",
+    "trip_id": "5a7f9b66-1c9a-4991-aec2-9c5236049853",
+    "passenger_name": "Pieter Kowalski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "49bb65b0-0c63-4743-b7fe-837653617a36",
+    "trip_id": "dae97b86-b8ba-4db2-8bdf-1605bf36d7c8",
+    "passenger_name": "Ingrid Larsen",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "aca7f2b6-2474-4229-ab1d-22d80004a844",
+    "trip_id": "3bea99d2-8f71-4696-acae-6ff1634ce928",
+    "passenger_name": "Rafael Bourgeois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "03e4535c-8472-44c2-ac89-11df68768406",
+    "trip_id": "deda6978-7c9d-4bf4-858a-6e06f4107254",
+    "passenger_name": "Marta Bianchi",
     "has_bicycle": false,
     "has_dog": true,
     "status": "pending"
   },
   {
-    "id": "554c961b-e797-43ef-af18-860e2c7c40c8",
-    "trip_id": "b635726b-a6a5-4c76-987f-0e41c40f3a1d",
-    "passenger_name": "Camille Dubois",
+    "id": "456cd7dd-14d7-4e5c-9178-d9a51dd9156f",
+    "trip_id": "15abad78-8971-4179-b68f-36478fcd2279",
+    "passenger_name": "Oskar Hansen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "20bfcb4c-e297-4da5-89f7-8a8c809d0f85",
+    "trip_id": "41f3d55e-8bca-4ad7-86c6-f9405a8f41cb",
+    "passenger_name": "Zofia Petrov",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "68335efc-ca57-4678-950b-c722c83b673c",
+    "trip_id": "148fb8a1-f2e6-4023-8ca0-e1b666768f32",
+    "passenger_name": "Liam Doe",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "d2995439-bd05-4c51-9b3a-e2eb9f386ef5",
+    "trip_id": "033ec819-98c3-46d0-b25d-82cbdcd4ae65",
+    "passenger_name": "Freya Andersson",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "81a06ad6-19b1-4bfd-8811-df671f819e99",
+    "trip_id": "c6449bce-fa7d-4ae2-bbab-71670efc064a",
+    "passenger_name": "Nikolai Byrne",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "4291922b-8567-4355-8d60-0bf24d08da3e",
+    "trip_id": "d02bc604-8e49-4ce7-b1bf-93d9f3dbdb7a",
+    "passenger_name": "Isabela Walsh",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "2402f06e-bf93-48f5-9966-1693a1f83bc1",
+    "trip_id": "b2c37217-d907-4841-b85f-61b4ea354e7c",
+    "passenger_name": "Anders Ferrari",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "ff535aaf-0970-4244-964a-812c799bae35",
+    "trip_id": "8b7497f1-81bc-463f-9083-e60bc36a7cda",
+    "passenger_name": "Tomasz Rossi",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "64624fcc-82bf-4457-b2c4-e14dc1dc4415",
+    "trip_id": "935c34c3-585e-461f-b3bd-9540bfd2264f",
+    "passenger_name": "Nour Kovac",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "81a98a24-23ef-42d3-9d70-e2144e320501",
+    "trip_id": "beedcb35-2a23-4f2c-9f73-7ca75d32d043",
+    "passenger_name": "Giulia Berg",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "e5cd4437-9177-42e0-81c5-68350de7168f",
+    "trip_id": "2e69c8a4-8df0-4340-98be-cda4f6618269",
+    "passenger_name": "Sven Zielinski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "0745563a-c118-46b8-b7b9-b8a543f2d2e4",
+    "trip_id": "52606491-c61e-4fbd-b5f8-cafe2ebe8085",
+    "passenger_name": "Katarzyna Okafor",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "cancelled"
+  },
+  {
+    "id": "dfdadf9d-21dc-492d-b1c7-5b5c2ceffd5c",
+    "trip_id": "27cec783-1a4d-4c00-a8ca-9c6aedeaedf6",
+    "passenger_name": "Andrei Müller",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "c5cfa3a4-9aea-4e9c-9a83-6c9a2e655fad",
+    "trip_id": "8b87c5c1-7056-4b87-9a09-278c9d3dbb6f",
+    "passenger_name": "Mireille Garcia",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "c25b37ea-1acc-4a6f-bd53-28f745eda805",
+    "trip_id": "4b964a20-17c8-4147-85cf-e4b11a245e61",
+    "passenger_name": "Bjorn Costa",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "cdf37b35-8367-4082-8605-cb972efeebee",
+    "trip_id": "808a5154-5e92-4c2a-9690-019145fa6b3c",
+    "passenger_name": "Elena Smith",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "c520e812-1153-4f66-a2f4-ddda2f24e5b6",
+    "trip_id": "f9045a3d-d9b3-44be-a02b-e99e065fd1d9",
+    "passenger_name": "Diego El-Amin",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "83b9db0e-51e4-4914-9592-d3a447c6c43d",
+    "trip_id": "df7e379b-5c02-4c1e-b46e-c55d22171c46",
+    "passenger_name": "Petra de Vries",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "53b869ea-5028-47ba-ab5f-80d67f0b7565",
+    "trip_id": "453876b8-848e-4dcd-9330-7c8b1d876a99",
+    "passenger_name": "Hugo Lindqvist",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "92e6ccca-62b1-42f9-b96d-f8ed867daef3",
+    "trip_id": "0204e1bc-879d-4291-ba4c-319159e3e422",
+    "passenger_name": "Amelie Eriksson",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "4ae7610d-fcf5-4832-9bf4-5e4b6db31938",
+    "trip_id": "420392de-69d5-422a-99d5-a8a5da227aa4",
+    "passenger_name": "Lars Silva",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "736058e1-9fb9-4827-821e-24b32ca178c3",
+    "trip_id": "16ec9772-6734-469b-8d0e-ceb0f73cc561",
+    "passenger_name": "John Popescu",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "c7567a50-4882-42d2-baeb-ead639f88da5",
+    "trip_id": "093315a4-b417-49b7-826a-44c5a75c7831",
+    "passenger_name": "Jane Nowak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "7962677a-24a4-4bab-8250-51e036082075",
+    "trip_id": "a942b000-710e-45cf-af3e-58e12313fc2d",
+    "passenger_name": "Francis Haddad",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "bf1a3cfe-032d-43b8-83d4-512697697362",
+    "trip_id": "8dd0df0d-1786-418a-b259-e5a2fccebbf8",
+    "passenger_name": "Amara Novak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "031d6882-e962-4753-bb06-2dc283dd47ae",
+    "trip_id": "e8b3b2bd-579b-4cb8-b042-6119e7161f68",
+    "passenger_name": "Lukas Dubois",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "9dd99d6d-9742-47d9-a0a9-e18df18113d6",
+    "trip_id": "3c243610-742a-44f2-8dbc-c2a5a57d6f92",
+    "passenger_name": "Sofia Kowalski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "3bab5004-ec08-4a93-9556-712e3466b996",
+    "trip_id": "0eb162f6-3f12-4bac-b17b-e1091dddf0e2",
+    "passenger_name": "Mateus Larsen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "67798fec-5fec-4e9d-9090-64febe394a1e",
+    "trip_id": "65edc44c-3e76-4885-add6-f160d09e1fae",
+    "passenger_name": "Elin Bourgeois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "2eb435e8-1782-4a12-b46f-bba255abb6a9",
+    "trip_id": "7c4c0ff6-0df7-4761-9fee-c0b05ec69bb3",
+    "passenger_name": "Youssef Bianchi",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "89a011c9-2043-4667-bb84-5f63d69bef73",
+    "trip_id": "a6a25483-2771-48df-9a4d-cf734db23323",
+    "passenger_name": "Chiara Hansen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "960ba525-9789-45f9-962c-d6701ae12c47",
+    "trip_id": "1f6353b4-95d5-4625-b6d5-de8764a2f906",
+    "passenger_name": "Noah Petrov",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "adf5f688-9332-499b-9cce-13fca3b067b2",
+    "trip_id": "5cda14f2-7a91-4a2a-99cd-58d697ab7958",
+    "passenger_name": "Camille Doe",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "da835975-fab8-4176-94ec-d421e346c37b",
+    "trip_id": "5a99087f-faf5-4346-8789-cd4e84e2fd90",
+    "passenger_name": "Hana Andersson",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "ae7421ea-de5b-4f3d-a01e-3296dcf30288",
+    "trip_id": "9df9b835-d401-4a71-b76d-bb14abe1ad61",
+    "passenger_name": "Dimitri Byrne",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "4516d152-5dc2-4d4c-b2af-684339a99501",
+    "trip_id": "0a06465f-133d-4529-9c3b-be48271f8d48",
+    "passenger_name": "Aoife Walsh",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "c852ed91-3351-45a4-bfb9-7b47040af0d5",
+    "trip_id": "fc9082cd-adaa-46fd-b011-efe57883f4b5",
+    "passenger_name": "Pieter Ferrari",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "73709440-ebba-448b-a711-193627b398f3",
+    "trip_id": "fc14d1ba-8654-4904-ab30-780050c0c0d9",
+    "passenger_name": "Ingrid Rossi",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "d14c24fc-86be-4d43-9354-c2eeb4ddfff9",
+    "trip_id": "17903b71-a0bd-4e2d-8d75-5913c7c82c18",
+    "passenger_name": "Rafael Kovac",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "d89b20e4-8055-4825-9e30-cad9fc2bc9d9",
+    "trip_id": "76621914-872c-463a-a94a-683ddd198d3a",
+    "passenger_name": "Marta Berg",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "818d2a08-9b5d-4d50-b8ef-30be4a01c274",
+    "trip_id": "bee7219c-6206-404f-a8a9-cbc40f350abd",
+    "passenger_name": "Oskar Zielinski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "bdcc6b34-939d-4149-873b-278cf19958b6",
+    "trip_id": "a8f96781-a40d-455b-96ba-29235439fad8",
+    "passenger_name": "Zofia Okafor",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "cancelled"
+  },
+  {
+    "id": "fffe5f02-56e3-4fdd-8ef7-5b478d70f574",
+    "trip_id": "3170593e-2b0b-42fb-94d4-7fc596fe1869",
+    "passenger_name": "Liam Müller",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "7147c2f4-38cb-4e92-91dd-49fe19f5830f",
+    "trip_id": "879040db-d5b1-4b94-a2fe-4a698f1a1885",
+    "passenger_name": "Freya Garcia",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "4a2adc0e-ae14-4409-8abf-69c174441729",
+    "trip_id": "5d76bc3b-bbaf-403d-b508-762c7972c298",
+    "passenger_name": "Nikolai Costa",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "fd3f0ff9-00e7-4f93-904d-9b07348e6877",
+    "trip_id": "a0526097-379c-4d9f-8e2f-65c5e4f462e8",
+    "passenger_name": "Isabela Smith",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "49a667e2-543d-460f-acb8-3dc95ea8d533",
+    "trip_id": "e6fb5677-f1f5-4407-94a0-beb4cdb277fc",
+    "passenger_name": "Anders El-Amin",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "c559def7-79ba-463e-b652-16a3e5048cf7",
+    "trip_id": "ad3383f3-fe98-4ca0-8c5c-3370658d751e",
+    "passenger_name": "Tomasz de Vries",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "660cac33-64ff-4907-b599-1adc83de69d2",
+    "trip_id": "7b6098ad-3354-4347-bd7a-89d8ae704b57",
+    "passenger_name": "Nour Lindqvist",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "56c47cf1-fdd4-438e-ba42-39bd5efbef44",
+    "trip_id": "037f5eb5-e333-41ab-ae1c-46ce9407f163",
+    "passenger_name": "Giulia Eriksson",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "467e88ca-11e5-4d5e-ba8d-41f53fd33b59",
+    "trip_id": "c8e67906-0062-4afb-8ded-8820c59ad78a",
+    "passenger_name": "Sven Silva",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "9066d124-e311-4806-b476-30f3e69281f4",
+    "trip_id": "670723dc-11b3-4681-a0ed-e3bc0af109a1",
+    "passenger_name": "Katarzyna Popescu",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "6276d87e-8080-4b92-a8c6-272f3f696202",
+    "trip_id": "b47042cf-2061-4cdb-9e47-8abf8fcb3a70",
+    "passenger_name": "Andrei Nowak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "61d04ba8-5d0b-45cb-bd56-6d410e63d455",
+    "trip_id": "6a231d98-65ac-44c2-80ce-9426463e1e16",
+    "passenger_name": "Mireille Haddad",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "901697f8-41c0-4211-a987-95c8ea4dad95",
+    "trip_id": "81b7f40a-72c9-4b0a-b526-65d33b8d6f34",
+    "passenger_name": "Bjorn Novak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "ee2a2f87-941b-4b28-9a4b-8f164a423154",
+    "trip_id": "9ea0c4c1-5fb5-4273-9d65-c6dd4fcff841",
+    "passenger_name": "Elena Dubois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "f40a74bc-5971-4bea-b244-9db1b492301c",
+    "trip_id": "e010b590-e336-47be-8e41-bf3bc5807410",
+    "passenger_name": "Diego Kowalski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "b6528802-d288-4371-a74d-9c312283446a",
+    "trip_id": "a328a0ba-8a93-42db-aa31-df8c66e00765",
+    "passenger_name": "Petra Larsen",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "909adcd0-643d-43ac-95b7-509cd61c56dc",
+    "trip_id": "5ed9fa9b-cb6e-45c5-9963-1180800687f9",
+    "passenger_name": "Hugo Bourgeois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "f858e0d6-841b-4ee2-81c9-bd9b3308a986",
+    "trip_id": "9d6f0e44-78a2-42f4-b824-30bf2ca31f71",
+    "passenger_name": "Amelie Bianchi",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "019d5203-a884-4aff-90a1-1b808bad8192",
+    "trip_id": "fba77f21-be9e-4d73-aa94-961a39ebab4f",
+    "passenger_name": "Lars Hansen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "a7bae6b0-ee3e-41c9-b5ad-37987732edcb",
+    "trip_id": "ca61aa6f-4692-437c-b59c-305c20b9e4ba",
+    "passenger_name": "John Petrov",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "d8cc9c2c-b509-4312-9599-841ab151afac",
+    "trip_id": "8958a5d5-b1d2-4d3e-a7d2-4ef2220a81d3",
+    "passenger_name": "Jane Doe",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "1689df3a-40de-4bd9-94c5-d04cccab299b",
+    "trip_id": "ab339367-dcdb-4463-a051-c52499eb697d",
+    "passenger_name": "Francis Andersson",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "828ebe96-de79-42e8-bac1-143a41d50bb1",
+    "trip_id": "00d96a44-d462-468b-9985-6566588d13ae",
+    "passenger_name": "Amara Byrne",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "9d6aba76-e147-4829-96ec-f49672e02281",
+    "trip_id": "147db460-f44f-46b9-b348-05ecf6884947",
+    "passenger_name": "Lukas Walsh",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "7b7d1f5b-ec9b-425b-b020-c52e6c942ece",
+    "trip_id": "521bfc6d-cf46-4538-8f4f-18e8c0d10750",
+    "passenger_name": "Sofia Ferrari",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "71e527e9-f679-4267-a7ae-5f902dfb4e73",
+    "trip_id": "e6882155-cbd8-4d35-8463-9ffb65d47285",
+    "passenger_name": "Mateus Rossi",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "8a1aea09-a678-4724-a60c-4b0fa9700b44",
+    "trip_id": "683a35e4-6cf1-4cc7-aa5d-fb1d81815ce4",
+    "passenger_name": "Elin Kovac",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "4976dd2a-7ae8-4cde-9a65-13b7b007ed11",
+    "trip_id": "1a706b86-fb29-4f85-85c5-fda400ba2f30",
+    "passenger_name": "Youssef Berg",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "79ec1b4b-5218-4914-b4b1-9dcfe196aaed",
+    "trip_id": "9fff6c3c-f846-48f6-ab55-119ba7a5294f",
+    "passenger_name": "Chiara Zielinski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "42818672-8112-4df5-a0f0-7b94344479f5",
+    "trip_id": "6482e80b-8192-4b1d-9ab2-c89bb7b9557d",
+    "passenger_name": "Noah Okafor",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "cancelled"
+  },
+  {
+    "id": "2f9a73cd-5f9c-442e-aa84-e873d1765f42",
+    "trip_id": "48c4d797-7aab-460e-99fb-443ca5f67bd9",
+    "passenger_name": "Camille Müller",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "8360ab8f-b6b8-4251-8112-791675cd88e3",
+    "trip_id": "bf262480-a00d-43a5-9aeb-f13665fd7e0c",
+    "passenger_name": "Hana Garcia",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "6fb1fa49-ae8a-4614-a877-b47093e8f7ff",
+    "trip_id": "4dc5d69b-39d4-4803-8ee2-27321accbe03",
+    "passenger_name": "Dimitri Costa",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "15b276b8-7530-4aa8-91a8-57ad73a8dbfa",
+    "trip_id": "b7c20f79-3308-4241-8ca9-a0b969cf3ec4",
+    "passenger_name": "Aoife Smith",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "4f6f77ab-dccb-4f7c-abd5-c0d5b5293e72",
+    "trip_id": "977d4b54-45c6-4eca-bf59-ac4742ed3503",
+    "passenger_name": "Pieter El-Amin",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "96023960-a643-43ad-b6a7-ba9ae84b2285",
+    "trip_id": "fcc23c81-fb56-4f8b-b166-3e061ce25158",
+    "passenger_name": "Ingrid de Vries",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "58963189-e6b8-4ead-9d18-16cb93372375",
+    "trip_id": "c58ed6f1-9eb8-4667-8b98-2b4870cefc88",
+    "passenger_name": "Rafael Lindqvist",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "c3085149-6706-4395-847d-4003b01cfd47",
+    "trip_id": "1cf656c7-fa9e-462e-b52a-05ebf8136be1",
+    "passenger_name": "Marta Eriksson",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "7c972e5a-9517-4f72-82bc-0414ad73ba8c",
+    "trip_id": "4b5e902d-e63b-483d-9dee-2fde120c814d",
+    "passenger_name": "Oskar Silva",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "85f1de63-fab8-43f6-b7ea-7796c6c16d54",
+    "trip_id": "7cc6f8f6-b6f9-45d0-ad51-f14fbb32c11d",
+    "passenger_name": "Zofia Popescu",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "d12d8a4f-0646-48ae-b228-2d1af77c87c7",
+    "trip_id": "9dfca62b-df1a-4c6a-bb6f-8edc1fefb199",
+    "passenger_name": "Liam Nowak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "9f2c216f-1a04-4232-b61d-fa5f0a9c90be",
+    "trip_id": "24f1953f-306c-4e75-adf5-60733254d116",
+    "passenger_name": "Freya Haddad",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "bb3965b8-b6b5-4468-abac-a6a76dd0a07e",
+    "trip_id": "47262b27-1509-4be6-80cd-8777fc424cfb",
+    "passenger_name": "Nikolai Novak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "3bd7236f-d24d-4310-8dc4-6df9af7bcb6a",
+    "trip_id": "607b35da-13b4-4f68-96c2-f6a5c453edfb",
+    "passenger_name": "Isabela Dubois",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "67bd035b-116b-4e65-914d-4c87d5105bfd",
+    "trip_id": "6521c16b-de04-439a-b2c9-4d746d5509cb",
+    "passenger_name": "Anders Kowalski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "6ec69b58-92c7-41dd-b9f3-9ee3fc46bff4",
+    "trip_id": "9a789a58-57f0-40c9-bae6-72e33b4d2fb0",
+    "passenger_name": "Tomasz Larsen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "1e54e3dc-2a46-4126-a6c2-a8c98dbbd134",
+    "trip_id": "c395305f-403e-420d-8844-411df5c69e1d",
+    "passenger_name": "Nour Bourgeois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "ef54420e-4bc3-436f-bfd7-aed85d4848a8",
+    "trip_id": "01fe9f41-7c4c-4a7b-bcae-bd3c39513e30",
+    "passenger_name": "Giulia Bianchi",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "98ffde41-c1c2-4ff9-99c2-3d96593badd5",
+    "trip_id": "e8ccbd4b-ef03-4be0-add3-82cd0f143fc8",
+    "passenger_name": "Sven Hansen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "58411c2f-1160-426c-85b3-f153a3426055",
+    "trip_id": "f7faf9c2-0231-4e52-aeab-ce6a84cfbf62",
+    "passenger_name": "Katarzyna Petrov",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "981f6af1-f79a-4e3a-ae0c-0065c4b0f228",
+    "trip_id": "c422b81d-efda-4287-b9ce-3d8e55c0fb4a",
+    "passenger_name": "Andrei Doe",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "d7dace03-e001-4adf-b317-f66990c551d8",
+    "trip_id": "126e74e9-10a4-4a77-b067-b22701df5ca2",
+    "passenger_name": "Mireille Andersson",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "f027029d-b444-4c68-8954-bf4113419cd6",
+    "trip_id": "a0f934a6-3e79-496f-8559-4946c44330b1",
+    "passenger_name": "Bjorn Byrne",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "cc127a3d-1d54-4569-a9e7-4c69f671679d",
+    "trip_id": "c66418b4-3c18-4f60-ba98-fd67600f6870",
+    "passenger_name": "Elena Walsh",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "f27adbf1-7756-41e4-8622-35a39ff88675",
+    "trip_id": "e9287977-a1ec-4db9-965f-4ef08dec47ff",
+    "passenger_name": "Diego Ferrari",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "d7f27908-4e73-48a3-b4d8-338ff4306c96",
+    "trip_id": "12154409-fe47-4a3e-a494-4f4f7e59c5a5",
+    "passenger_name": "Petra Rossi",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "4c29d104-89bc-4272-8eaf-eb433b430672",
+    "trip_id": "b747f22e-34ef-43c9-87ec-7fe3a2c1486a",
+    "passenger_name": "Hugo Kovac",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "d334e9ec-f6b7-4e10-a937-3253718eceda",
+    "trip_id": "afaa0503-889e-429a-a855-3b097bb4e735",
+    "passenger_name": "Amelie Berg",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "ef05876a-8adb-40e5-9bd7-79df69fdaed9",
+    "trip_id": "be102917-5d72-49f9-8610-960eaa96042f",
+    "passenger_name": "Lars Zielinski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "3c289767-c12e-4923-88ad-4b59d80278b4",
+    "trip_id": "548c6914-6d14-4490-a158-085df5a34209",
+    "passenger_name": "John Okafor",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "cancelled"
+  },
+  {
+    "id": "e15740ef-2bdb-4b75-bc20-1d68cf0f082d",
+    "trip_id": "5380c0ca-6489-4dbe-af07-39d58aa1fd21",
+    "passenger_name": "Jane Müller",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "952cacfd-66f3-4ed2-8421-0c3b6e433e75",
+    "trip_id": "74053e29-7b82-4f53-890b-62824620e8bb",
+    "passenger_name": "Francis Garcia",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "f62bee0c-72db-40b6-9341-c6b4b14a6ab9",
+    "trip_id": "3a00d59f-ead1-4e7d-8101-1245eb72fffb",
+    "passenger_name": "Amara Costa",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "7e861f1a-e636-4600-9112-067de0cd391e",
+    "trip_id": "0833f41a-e82b-484d-9286-69b5bbcc1489",
+    "passenger_name": "Lukas Smith",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "ba91ef9c-85ef-4cc9-b6ea-23a53df48a29",
+    "trip_id": "c1dce392-2de4-4102-8784-49c0347ef953",
+    "passenger_name": "Sofia El-Amin",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "01bc692b-2ebd-4edf-bbe0-33f6eb7563e8",
+    "trip_id": "58d304f8-e831-46cf-a310-b0a24c2b773f",
+    "passenger_name": "Mateus de Vries",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "9e1b082e-3aa5-4da8-9834-547dd2a710b1",
+    "trip_id": "34210d27-5209-4689-9a7e-60937cd4ed2f",
+    "passenger_name": "Elin Lindqvist",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "4cc92eca-740e-4d1d-a84d-e097d7bcb55f",
+    "trip_id": "2cc15abf-9c0a-41e3-ba3d-99e304365d44",
+    "passenger_name": "Youssef Eriksson",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "ac8996d0-2729-40b2-8b0f-608601243569",
+    "trip_id": "1c015d74-7e22-4ce1-8151-9cff50332036",
+    "passenger_name": "Chiara Silva",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "d3c6826d-672f-4e21-bed6-62d190736edc",
+    "trip_id": "fd48cc05-978d-4a08-a36c-22652429d6c1",
+    "passenger_name": "Noah Popescu",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "a6cf23bd-f991-4120-9dfb-687d59ce9e66",
+    "trip_id": "887dcf63-b497-47b5-95a3-fe9a3c7cdd55",
+    "passenger_name": "Camille Nowak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "5c72a41a-b26a-4163-83b6-d152c34690c3",
+    "trip_id": "7326dafc-b9cc-4670-a685-2534bd3eba98",
+    "passenger_name": "Hana Haddad",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "2c01a699-5988-4dea-bf80-24feb8730384",
+    "trip_id": "cb21ecc4-f61a-4ba6-bb10-06e6197d0b25",
+    "passenger_name": "Dimitri Novak",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "e3663c97-2cfc-4c6a-8cb4-4f48552ef807",
+    "trip_id": "34d0be73-2db6-4fc5-899d-ce9fe2250429",
+    "passenger_name": "Aoife Dubois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "fde63261-719d-4636-86bf-acb2e8c6aab9",
+    "trip_id": "ed55cc6a-1c04-4fab-879b-d816ed4141fa",
+    "passenger_name": "Pieter Kowalski",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "c86eee91-6030-41f6-a082-4b85fb6b2984",
+    "trip_id": "7072be2b-395e-4fb9-96a9-d4932a10b57b",
+    "passenger_name": "Ingrid Larsen",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "588c725b-7df3-48c2-a73e-f1373ae99255",
+    "trip_id": "935439e6-d546-404b-b5a4-ac15c1b96b0a",
+    "passenger_name": "Rafael Bourgeois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "5ca0323f-189b-4f2a-95d5-4c6a569c1eea",
+    "trip_id": "a0012c52-2774-4c94-8ee7-20e7c648afa9",
+    "passenger_name": "Marta Bianchi",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "1a80aeeb-c76a-499f-908c-ef58bf54c949",
+    "trip_id": "74c0ad04-0ff1-4bb3-94b7-ef3268d4dc55",
+    "passenger_name": "Oskar Hansen",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "efe3f009-03d8-421d-92a5-cd88bc4be975",
+    "trip_id": "01a7b215-49b2-4e60-8662-92c0f94f5474",
+    "passenger_name": "Zofia Petrov",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "63152921-e087-401e-b642-6926967db859",
+    "trip_id": "8441d8ed-0163-4ce7-9bae-d791f05d67f9",
+    "passenger_name": "Liam Doe",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "1fcdbe75-0144-47f8-aab3-72d4a4e4b4d9",
+    "trip_id": "790bb89f-ea82-45c2-9410-befac6608eba",
+    "passenger_name": "Freya Andersson",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "26953947-0950-43ef-9482-3dcfa2478645",
+    "trip_id": "f4f84784-6a0e-4ee3-8a75-8722a3ea3736",
+    "passenger_name": "Nikolai Byrne",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "bf96b2cd-8d0a-4a4c-8f83-121cccaf3de8",
+    "trip_id": "5f63d38c-620a-4ab0-bc23-048f2220aad7",
+    "passenger_name": "Isabela Walsh",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "e99f6f0a-4e3a-497a-9960-28192c4511c9",
+    "trip_id": "7070b10a-83b1-424f-9a07-5e7fb49ce147",
+    "passenger_name": "Anders Ferrari",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "cancelled"
+  },
+  {
+    "id": "25a7160c-6adf-4b75-a6d4-978d991282da",
+    "trip_id": "a59dc4a4-2b98-4cbd-87d2-1ed98ce36064",
+    "passenger_name": "Tomasz Rossi",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "50442393-3f58-4545-808f-023c1a88bd18",
+    "trip_id": "0f91162c-d64d-4289-91ba-5445c802f9e6",
+    "passenger_name": "Nour Kovac",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "218e8b74-2c44-4e5c-a85f-d2b3fd12a6db",
+    "trip_id": "4e876ee5-9c54-4125-a62d-2527fd2a42a7",
+    "passenger_name": "Giulia Berg",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "d3470735-aec5-4fe0-95dd-db7a1f2da1ff",
+    "trip_id": "26932304-dfa9-4d99-b7b2-2dc5a5933cb9",
+    "passenger_name": "Sven Zielinski",
     "has_bicycle": false,
     "has_dog": false,
     "status": "pending"

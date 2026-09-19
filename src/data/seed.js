@@ -3,6 +3,7 @@ const pool = require('../db/client');
 const stations = require('./stations.json');
 const trips = require('./trips.json');
 const bookings = require('./bookings.json');
+const payments = require('./payments.json');
 
 const shouldClear = process.argv.includes('--clear');
 
@@ -47,6 +48,18 @@ async function seedBookings() {
   console.log(`Seeded ${bookings.length} bookings.`);
 }
 
+async function seedPayments() {
+  for (const p of payments) {
+    await pool.query(
+      `INSERT INTO payments (id, booking_id, amount, currency, source_type, source, status)
+       VALUES ($1, $2, $3, $4, $5, $6, $7)
+       ON CONFLICT (id) DO NOTHING`,
+      [p.id, p.booking_id, p.amount, p.currency, p.source_type, JSON.stringify(p.source), p.status]
+    );
+  }
+  console.log(`Seeded ${payments.length} payments.`);
+}
+
 async function main() {
   try {
     if (shouldClear) {
@@ -55,6 +68,7 @@ async function main() {
     await seedStations();
     await seedTrips();
     await seedBookings();
+    await seedPayments();
     console.log('Seeding complete.');
   } catch (err) {
     console.error('Seeding failed:', err.message);
