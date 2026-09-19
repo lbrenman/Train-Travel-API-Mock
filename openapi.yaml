@@ -1,0 +1,742 @@
+openapi: 3.0.3
+info:
+  title: Train Travel API (Mock)
+  description: |
+    A persistent mock implementation of the [Train Travel API](https://github.com/bump-sh-examples/train-travel-api)
+    for finding and booking train trips across Europe.
+
+    This mock is backed by PostgreSQL (data survives restarts) and secured via an API key
+    (`x-api-key` header) rather than the upstream spec's OAuth2 flow, so it can be used
+    standalone for local development, integration testing, and demos. It also extends the
+    upstream spec with full CRUD (create/update/delete) on Stations, Trips and Bookings,
+    which are useful for seeding and exercising client code against a mock server.
+  version: 1.2.1
+  contact:
+    name: Train Support
+    url: https://example.com/support
+    email: support@example.com
+  license:
+    name: Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International
+    identifier: CC-BY-NC-SA-4.0
+
+servers:
+  - url: http://localhost:3000
+    description: Local development
+
+security:
+  - ApiKeyAuth: []
+
+tags:
+  - name: Health
+    description: Service health check.
+  - name: Stations
+    description: Find, filter, and manage train stations across Europe.
+  - name: Trips
+    description: Timetables and routes for train trips between stations, including pricing and availability.
+  - name: Bookings
+    description: Create and manage bookings for train trips, including passenger details.
+  - name: Payments
+    description: Pay for bookings and view payment status.
+
+paths:
+  /health:
+    get:
+      summary: Health check
+      operationId: get-health
+      tags: [Health]
+      security: []
+      responses:
+        '200':
+          description: Service is healthy
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  status: { type: string, example: ok }
+                  timestamp: { type: string, format: date-time }
+                  version: { type: string, example: 1.2.1 }
+                  service: { type: string, example: train-travel-api-mock }
+
+  /stations:
+    get:
+      summary: Get a list of train stations
+      description: Returns a paginated and searchable list of all train stations.
+      operationId: get-stations
+      tags: [Stations]
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - name: search
+          in: query
+          description: A search term to filter the list of stations by name or address.
+          required: false
+          schema: { type: string }
+          example: Milano Centrale
+        - name: country
+          in: query
+          description: Filter stations by ISO country code.
+          required: false
+          schema: { type: string }
+          example: DE
+        - name: coordinates
+          in: query
+          description: >
+            The latitude and longitude of the user's location. Accepted for compatibility
+            with the upstream spec; this mock does not filter by geographic proximity.
+          required: false
+          schema: { type: string }
+          example: '52.5200,13.4050'
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/WrapperCollection'
+                  - properties:
+                      data:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Station'
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    post:
+      summary: Create a train station
+      description: Extension of the upstream spec — useful for seeding a mock server.
+      operationId: create-station
+      tags: [Stations]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/StationInput' }
+      responses:
+        '201':
+          description: Station created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Station' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+  /stations/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: The ID of the station.
+        schema: { type: string, format: uuid }
+    get:
+      summary: Get a station
+      operationId: get-station
+      tags: [Stations]
+      responses:
+        '200':
+          description: The station details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Station' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    put:
+      summary: Update a station
+      description: Extension of the upstream spec.
+      operationId: update-station
+      tags: [Stations]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/StationInput' }
+      responses:
+        '200':
+          description: Station updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Station' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    delete:
+      summary: Delete a station
+      description: Extension of the upstream spec.
+      operationId: delete-station
+      tags: [Stations]
+      responses:
+        '204': { description: Station deleted }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+  /trips:
+    get:
+      summary: Get available train trips
+      description: >
+        Returns a list of available train trips between the specified origin and destination
+        stations on the given date, and allows filtering by bicycle and dog allowances.
+      operationId: get-trips
+      tags: [Trips]
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+        - name: origin
+          in: query
+          description: The ID of the origin station
+          required: false
+          schema: { type: string, format: uuid }
+        - name: destination
+          in: query
+          description: The ID of the destination station
+          required: false
+          schema: { type: string, format: uuid }
+        - name: date
+          in: query
+          description: The date of the trip in ISO 8601 format.
+          required: false
+          schema: { type: string, format: date-time }
+          example: '2026-10-05T09:00:00Z'
+        - name: bicycles
+          in: query
+          description: Only return trips where bicycles are known to be allowed
+          required: false
+          schema: { type: boolean, default: false }
+        - name: dogs
+          in: query
+          description: Only return trips where dogs are known to be allowed
+          required: false
+          schema: { type: boolean, default: false }
+      responses:
+        '200':
+          description: A list of available train trips
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/WrapperCollection'
+                  - properties:
+                      data:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Trip'
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    post:
+      summary: Create a train trip
+      description: Extension of the upstream spec — useful for seeding a mock server.
+      operationId: create-trip
+      tags: [Trips]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/TripInput' }
+      responses:
+        '201':
+          description: Trip created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Trip' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+  /trips/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: The ID of the trip.
+        schema: { type: string, format: uuid }
+    get:
+      summary: Get a trip
+      operationId: get-trip
+      tags: [Trips]
+      responses:
+        '200':
+          description: The trip details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Trip' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    put:
+      summary: Update a trip
+      description: Extension of the upstream spec.
+      operationId: update-trip
+      tags: [Trips]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/TripInput' }
+      responses:
+        '200':
+          description: Trip updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Trip' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    delete:
+      summary: Delete a trip
+      description: Extension of the upstream spec.
+      operationId: delete-trip
+      tags: [Trips]
+      responses:
+        '204': { description: Trip deleted }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+  /bookings:
+    get:
+      summary: List existing bookings
+      operationId: get-bookings
+      tags: [Bookings]
+      parameters:
+        - $ref: '#/components/parameters/page'
+        - $ref: '#/components/parameters/limit'
+      responses:
+        '200':
+          description: A list of bookings
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/WrapperCollection'
+                  - properties:
+                      data:
+                        type: array
+                        items:
+                          $ref: '#/components/schemas/Booking'
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '429': { $ref: '#/components/responses/TooManyRequests' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    post:
+      summary: Create a booking
+      description: A booking is a temporary hold on a trip. It is not confirmed until the payment is processed.
+      operationId: create-booking
+      tags: [Bookings]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/BookingInput' }
+      responses:
+        '201':
+          description: Booking created
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Booking' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+  /bookings/{id}:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: The ID of the booking.
+        schema: { type: string, format: uuid }
+    get:
+      summary: Get a booking
+      operationId: get-booking
+      tags: [Bookings]
+      responses:
+        '200':
+          description: The booking details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Booking' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    put:
+      summary: Update a booking
+      description: Extension of the upstream spec.
+      operationId: update-booking
+      tags: [Bookings]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/BookingUpdateInput' }
+      responses:
+        '200':
+          description: Booking updated
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/Booking' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    delete:
+      summary: Delete a booking
+      description: Deletes a booking, cancelling the hold on the trip.
+      operationId: delete-booking
+      tags: [Bookings]
+      responses:
+        '204': { description: Booking deleted }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+  /bookings/{id}/payment:
+    parameters:
+      - name: id
+        in: path
+        required: true
+        description: The ID of the booking to pay for.
+        schema: { type: string, format: uuid }
+    get:
+      summary: Get the payment for a booking
+      description: Extension of the upstream spec.
+      operationId: get-booking-payment
+      tags: [Payments]
+      responses:
+        '200':
+          description: The payment details
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/BookingPayment' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+    post:
+      summary: Pay for a booking
+      description: A payment confirms the booking for the user and enables them to get their tickets.
+      operationId: create-booking-payment
+      tags: [Payments]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/BookingPaymentInput' }
+            examples:
+              Card:
+                summary: Card Payment
+                value:
+                  amount: 49.99
+                  currency: gbp
+                  source:
+                    object: card
+                    name: J. Doe
+                    number: '4242424242424242'
+                    cvc: '123'
+                    exp_month: 12
+                    exp_year: 2027
+                    address_country: gb
+                    address_post_code: N12 9XX
+              Bank:
+                summary: Bank Account Payment
+                value:
+                  amount: 100.5
+                  currency: gbp
+                  source:
+                    object: bank_account
+                    name: J. Doe
+                    number: '00012345'
+                    sort_code: '000123'
+                    account_type: individual
+                    bank_name: Starling Bank
+                    country: gb
+      responses:
+        '200':
+          description: Payment successful
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  data: { $ref: '#/components/schemas/BookingPayment' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+        '404': { $ref: '#/components/responses/NotFound' }
+        '409': { $ref: '#/components/responses/Conflict' }
+        '500': { $ref: '#/components/responses/InternalServerError' }
+
+components:
+  securitySchemes:
+    ApiKeyAuth:
+      type: apiKey
+      in: header
+      name: x-api-key
+
+  parameters:
+    page:
+      name: page
+      in: query
+      description: The page number to return
+      required: false
+      schema: { type: integer, minimum: 1, default: 1 }
+    limit:
+      name: limit
+      in: query
+      description: The number of items to return per page
+      required: false
+      schema: { type: integer, minimum: 1, maximum: 100, default: 10 }
+
+  schemas:
+    Links:
+      type: object
+      properties:
+        self: { type: string, format: uri }
+        next: { type: string, format: uri }
+        prev: { type: string, format: uri }
+
+    WrapperCollection:
+      type: object
+      properties:
+        data:
+          type: array
+          items: {}
+        links:
+          $ref: '#/components/schemas/Links'
+
+    Station:
+      type: object
+      required: [id, name, address, country_code]
+      properties:
+        id: { type: string, format: uuid, readOnly: true }
+        name: { type: string, example: Berlin Hauptbahnhof }
+        address: { type: string, example: 'Europaplatz 1, 10557 Berlin, Germany' }
+        country_code: { type: string, example: DE }
+        timezone: { type: string, example: Europe/Berlin }
+        created_at: { type: string, format: date-time, readOnly: true }
+        updated_at: { type: string, format: date-time, readOnly: true }
+        links:
+          allOf:
+            - $ref: '#/components/schemas/Links'
+          readOnly: true
+
+    StationInput:
+      type: object
+      required: [name, address, country_code]
+      properties:
+        name: { type: string }
+        address: { type: string }
+        country_code: { type: string, minLength: 2, maxLength: 2 }
+        timezone: { type: string }
+
+    Trip:
+      type: object
+      properties:
+        id: { type: string, format: uuid, readOnly: true }
+        origin: { type: string, format: uuid }
+        destination: { type: string, format: uuid }
+        departure_time: { type: string, format: date-time }
+        arrival_time: { type: string, format: date-time }
+        operator: { type: string, example: Deutsche Bahn }
+        price: { type: number, example: 50 }
+        bicycles_allowed: { type: boolean }
+        dogs_allowed: { type: boolean }
+        created_at: { type: string, format: date-time, readOnly: true }
+        updated_at: { type: string, format: date-time, readOnly: true }
+        links:
+          allOf:
+            - $ref: '#/components/schemas/Links'
+          readOnly: true
+
+    TripInput:
+      type: object
+      required: [origin, destination, departure_time, arrival_time, operator, price]
+      properties:
+        origin: { type: string, format: uuid }
+        destination: { type: string, format: uuid }
+        departure_time: { type: string, format: date-time }
+        arrival_time: { type: string, format: date-time }
+        operator: { type: string }
+        price: { type: number, exclusiveMinimum: 0 }
+        bicycles_allowed: { type: boolean, default: false }
+        dogs_allowed: { type: boolean, default: false }
+
+    Booking:
+      type: object
+      properties:
+        id: { type: string, format: uuid, readOnly: true }
+        trip_id: { type: string, format: uuid }
+        passenger_name: { type: string, example: John Doe }
+        has_bicycle: { type: boolean }
+        has_dog: { type: boolean }
+        status:
+          type: string
+          enum: [pending, confirmed, cancelled]
+          readOnly: true
+        created_at: { type: string, format: date-time, readOnly: true }
+        updated_at: { type: string, format: date-time, readOnly: true }
+        links:
+          allOf:
+            - $ref: '#/components/schemas/Links'
+          readOnly: true
+
+    BookingInput:
+      type: object
+      required: [trip_id, passenger_name]
+      properties:
+        trip_id: { type: string, format: uuid }
+        passenger_name: { type: string }
+        has_bicycle: { type: boolean, default: false }
+        has_dog: { type: boolean, default: false }
+
+    BookingUpdateInput:
+      type: object
+      properties:
+        passenger_name: { type: string }
+        has_bicycle: { type: boolean }
+        has_dog: { type: boolean }
+        status: { type: string, enum: [pending, confirmed, cancelled] }
+
+    BookingPayment:
+      type: object
+      properties:
+        id: { type: string, format: uuid, readOnly: true }
+        amount: { type: number, exclusiveMinimum: 0, example: 49.99 }
+        currency:
+          type: string
+          enum: [bam, bgn, chf, eur, gbp, nok, sek, try]
+        source:
+          type: object
+          description: Masked on read — only the last 4 digits of the card/account number are returned.
+          properties:
+            object: { type: string, enum: [card, bank_account] }
+            name: { type: string }
+            number: { type: string, example: '************4242' }
+            exp_month: { type: integer }
+            exp_year: { type: integer }
+            account_type: { type: string }
+            sort_code: { type: string }
+            bank_name: { type: string }
+            country: { type: string }
+            address_country: { type: string }
+            address_post_code: { type: string }
+        status:
+          type: string
+          enum: [pending, succeeded, failed]
+          readOnly: true
+        links:
+          type: object
+          properties:
+            booking: { type: string, format: uri }
+          readOnly: true
+
+    BookingPaymentInput:
+      type: object
+      required: [amount, currency, source]
+      properties:
+        amount: { type: number, exclusiveMinimum: 0 }
+        currency:
+          type: string
+          enum: [bam, bgn, chf, eur, gbp, nok, sek, try]
+        source:
+          oneOf:
+            - title: Card
+              type: object
+              required: [object, name, number, cvc, exp_month, exp_year, address_country]
+              properties:
+                object: { type: string, enum: [card] }
+                name: { type: string }
+                number: { type: string, example: '4242424242424242' }
+                cvc: { type: string, minLength: 3, maxLength: 4 }
+                exp_month: { type: integer }
+                exp_year: { type: integer }
+                address_line1: { type: string }
+                address_line2: { type: string }
+                address_city: { type: string }
+                address_country: { type: string }
+                address_post_code: { type: string }
+            - title: Bank Account
+              type: object
+              required: [object, name, number, sort_code, account_type, bank_name, country]
+              properties:
+                object: { type: string, enum: [bank_account] }
+                name: { type: string }
+                number: { type: string }
+                sort_code: { type: string }
+                account_type: { type: string, enum: [individual, company] }
+                bank_name: { type: string }
+                country: { type: string }
+
+    Problem:
+      type: object
+      properties:
+        type: { type: string, example: https://example.com/errors/not-found }
+        title: { type: string, example: Not Found }
+        status: { type: integer, example: 404 }
+        detail: { type: string }
+
+  responses:
+    BadRequest:
+      description: Bad Request
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Problem' }
+    Unauthorized:
+      description: Unauthorized
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Problem' }
+    NotFound:
+      description: Not Found
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Problem' }
+    Conflict:
+      description: Conflict
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Problem' }
+    TooManyRequests:
+      description: Too Many Requests
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Problem' }
+    InternalServerError:
+      description: Internal Server Error
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/Problem' }

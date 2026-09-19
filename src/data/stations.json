@@ -1,0 +1,142 @@
+[
+  {
+    "id": "290f8a40-00d0-4159-bca7-26fc2494462d",
+    "name": "Berlin Hauptbahnhof",
+    "address": "Europaplatz 1, 10557 Berlin, Germany",
+    "country_code": "DE",
+    "timezone": "Europe/Berlin"
+  },
+  {
+    "id": "6f6597f2-c98d-4cfc-839d-ed13c9c0d454",
+    "name": "Paris Gare du Nord",
+    "address": "18 Rue de Dunkerque, 75010 Paris, France",
+    "country_code": "FR",
+    "timezone": "Europe/Paris"
+  },
+  {
+    "id": "35007fe9-e7a8-46c9-a427-ffa638106bf2",
+    "name": "Amsterdam Centraal",
+    "address": "Stationsplein 1, 1012 AB Amsterdam, Netherlands",
+    "country_code": "NL",
+    "timezone": "Europe/Amsterdam"
+  },
+  {
+    "id": "1786c721-08d6-4dd6-8b3d-203118f9a23e",
+    "name": "Brussels-South (Bruxelles-Midi)",
+    "address": "Avenue Fonsny 47b, 1060 Saint-Gilles, Belgium",
+    "country_code": "BE",
+    "timezone": "Europe/Brussels"
+  },
+  {
+    "id": "14c2428f-d1db-4ce9-bdfc-4caba1e8fd0d",
+    "name": "London St Pancras International",
+    "address": "Euston Rd, London N1C 4QP, United Kingdom",
+    "country_code": "GB",
+    "timezone": "Europe/London"
+  },
+  {
+    "id": "10f42ac2-c13e-4548-9aa8-ba84b46a1c1c",
+    "name": "Milano Centrale",
+    "address": "Piazza Duca d’Aosta, 1, 20124 Milano MI, Italy",
+    "country_code": "IT",
+    "timezone": "Europe/Rome"
+  },
+  {
+    "id": "ea12bbce-1224-44da-ac8c-84e728dd55a9",
+    "name": "Roma Termini",
+    "address": "Piazza dei Cinquecento, 00185 Roma RM, Italy",
+    "country_code": "IT",
+    "timezone": "Europe/Rome"
+  },
+  {
+    "id": "b7103289-a702-4c7e-b992-c2bbaeeffbe8",
+    "name": "Madrid Puerta de Atocha",
+    "address": "Plaza del Emperador Carlos V, 28045 Madrid, Spain",
+    "country_code": "ES",
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": "1b133511-05b5-466b-b588-62e80e56dc10",
+    "name": "Barcelona Sants",
+    "address": "Plaça dels Països Catalans, 08014 Barcelona, Spain",
+    "country_code": "ES",
+    "timezone": "Europe/Madrid"
+  },
+  {
+    "id": "1d98a2b8-37e7-4bc8-b8cb-8c6277117ccc",
+    "name": "Wien Hauptbahnhof",
+    "address": "Am Hauptbahnhof 1, 1100 Wien, Austria",
+    "country_code": "AT",
+    "timezone": "Europe/Vienna"
+  },
+  {
+    "id": "a11371fa-3fd1-4d14-a476-73dde5f24419",
+    "name": "Zürich Hauptbahnhof",
+    "address": "Bahnhofplatz, 8001 Zürich, Switzerland",
+    "country_code": "CH",
+    "timezone": "Europe/Zurich"
+  },
+  {
+    "id": "f26846b6-45ca-4aa0-9a5a-ff4ccf8b1061",
+    "name": "München Hauptbahnhof",
+    "address": "Bayerstraße 10A, 80335 München, Germany",
+    "country_code": "DE",
+    "timezone": "Europe/Berlin"
+  },
+  {
+    "id": "7c27fa46-45f3-4e4c-9509-946ff3e299a0",
+    "name": "Praha hlavní nádraží",
+    "address": "Wilsonova 300/8, 110 00 Praha, Czechia",
+    "country_code": "CZ",
+    "timezone": "Europe/Prague"
+  },
+  {
+    "id": "c24d8577-53fe-449e-9d03-e694f818d490",
+    "name": "Warszawa Centralna",
+    "address": "Aleje Jerozolimskie 54, 00-024 Warszawa, Poland",
+    "country_code": "PL",
+    "timezone": "Europe/Warsaw"
+  },
+  {
+    "id": "689f0577-2645-4db4-b004-f7ea2c037366",
+    "name": "København H",
+    "address": "Bernstorffsgade 16-22, 1577 København, Denmark",
+    "country_code": "DK",
+    "timezone": "Europe/Copenhagen"
+  },
+  {
+    "id": "5daaf732-4798-4144-a64d-8ae2552bcfca",
+    "name": "Stockholm Centralstation",
+    "address": "Centralplan 15, 111 20 Stockholm, Sweden",
+    "country_code": "SE",
+    "timezone": "Europe/Stockholm"
+  },
+  {
+    "id": "6cd01a6a-aa57-4e5c-8d30-20f2c8bb0ffa",
+    "name": "Lisboa Santa Apolónia",
+    "address": "Av. Infante Dom Henrique, 1100-018 Lisboa, Portugal",
+    "country_code": "PT",
+    "timezone": "Europe/Lisbon"
+  },
+  {
+    "id": "2b25a840-82f5-479a-a482-62d67f5054ad",
+    "name": "Budapest-Keleti",
+    "address": "Baross tér 10, 1087 Budapest, Hungary",
+    "country_code": "HU",
+    "timezone": "Europe/Budapest"
+  },
+  {
+    "id": "d30c45c0-2c31-4679-804e-e204e6f2a01a",
+    "name": "Genève-Cornavin",
+    "address": "Place de Cornavin 12, 1201 Genève, Switzerland",
+    "country_code": "CH",
+    "timezone": "Europe/Zurich"
+  },
+  {
+    "id": "37ef85e4-3faf-4357-ab8d-33b716b39b5f",
+    "name": "Lyon Part-Dieu",
+    "address": "5 Place Charles Béraudier, 69003 Lyon, France",
+    "country_code": "FR",
+    "timezone": "Europe/Paris"
+  }
+]

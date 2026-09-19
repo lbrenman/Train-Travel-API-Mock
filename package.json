@@ -1,0 +1,31 @@
+{
+  "name": "train-travel-api-mock",
+  "version": "1.0.0",
+  "description": "Mock implementation of the Train Travel API (bump-sh-examples/train-travel-api) with PostgreSQL persistence, API key auth, and full CRUD across all resources.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "seed": "node src/data/seed.js",
+    "seed:clear": "node src/data/seed.js --clear"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "express-rate-limit": "^7.4.0",
+    "express-validator": "^7.2.0",
+    "helmet": "^7.1.0",
+    "morgan": "^1.10.0",
+    "pg": "^8.12.0",
+    "swagger-ui-express": "^5.0.1",
+    "uuid": "^9.0.1",
+    "yamljs": "^0.3.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.4"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+.env
+*.log
+dist/
+.DS_Store
+coverage/
+.nyc_output/
+
+# Local postgres data — persists in Codespaces but should not be committed
+.pgdata/

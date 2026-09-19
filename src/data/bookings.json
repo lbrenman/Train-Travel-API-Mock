@@ -1,0 +1,98 @@
+[
+  {
+    "id": "7ef6e29b-0043-43d0-9f66-4c74c49a34ad",
+    "trip_id": "28feb093-9ef0-4ce3-bf48-e78aa44cb93d",
+    "passenger_name": "John Doe",
+    "has_bicycle": true,
+    "has_dog": true,
+    "status": "confirmed"
+  },
+  {
+    "id": "e4e20e81-b7bb-487a-8526-8538baaa1767",
+    "trip_id": "b20ed06f-7dfe-44e6-8970-728f09ac3abf",
+    "passenger_name": "Jane Smith",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "72105ffb-6f9a-4905-939e-567fc97c72d9",
+    "trip_id": "8e32c1ac-c31d-400c-952a-c2632227ef9b",
+    "passenger_name": "Francis Bourgeois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "586deb4e-760d-45d6-b935-9267ce2efed8",
+    "trip_id": "1e09cbd4-97c5-4590-9e51-344c378ed3bf",
+    "passenger_name": "Amara Okafor",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "b65253da-75ce-44cd-84d0-f847d7300b21",
+    "trip_id": "a20ab711-f03e-43e0-b0c1-dd7bb64dea6c",
+    "passenger_name": "Lukas Novak",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "567c3fc1-dc4b-4cd5-8a88-372394963619",
+    "trip_id": "ee1ba92a-f90d-450e-90d7-a6fb801d4bf4",
+    "passenger_name": "Sofia Rossi",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "5eaa3de8-2e50-410f-9b2c-09ea4333ca72",
+    "trip_id": "be9ec665-2e44-458c-982f-ae07b8f2cdf4",
+    "passenger_name": "Mateus Silva",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "c59489bd-0b81-478f-8330-3a70adc2d6c1",
+    "trip_id": "d3ea76d6-7272-42ca-b187-7ead3141e3a6",
+    "passenger_name": "Elin Andersson",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "c5291fa5-20e5-4da5-aa2d-0ea480437284",
+    "trip_id": "4f5b2a81-70be-4bc2-a8de-835603395df6",
+    "passenger_name": "Youssef El-Amin",
+    "has_bicycle": true,
+    "has_dog": false,
+    "status": "pending"
+  },
+  {
+    "id": "f46c82ec-36de-4e46-884a-ad66494e9e22",
+    "trip_id": "f9caa64e-ef73-4527-acdb-a2511515a5fe",
+    "passenger_name": "Chiara Bianchi",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "confirmed"
+  },
+  {
+    "id": "1d116e68-9479-4229-aa42-4a306d90f24e",
+    "trip_id": "30f2e189-9671-4518-a0e9-1603ef1d1fc3",
+    "passenger_name": "Noah Müller",
+    "has_bicycle": false,
+    "has_dog": true,
+    "status": "pending"
+  },
+  {
+    "id": "554c961b-e797-43ef-af18-860e2c7c40c8",
+    "trip_id": "b635726b-a6a5-4c76-987f-0e41c40f3a1d",
+    "passenger_name": "Camille Dubois",
+    "has_bicycle": false,
+    "has_dog": false,
+    "status": "pending"
+  }
+]
